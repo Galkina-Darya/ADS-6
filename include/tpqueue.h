@@ -5,7 +5,7 @@
 template<typename T, int size>
 class TPQueue {
   // реализация шаблона очереди с приоритетом на кольцевом буфере
-  private:
+ private:
     T arr[size] = { 0 };
     int b, l;
  public:
@@ -17,9 +17,9 @@ class TPQueue {
     arr[(a + 1) % size] = temp;
     ++l;
  }
- T& pop() {
-   return arr[(b++) % size];
- }
+    T& pop() {
+    return arr[(b++) % size];
+    }
 };
 
 struct SYM {
