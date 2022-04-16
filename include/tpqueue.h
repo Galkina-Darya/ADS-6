@@ -15,10 +15,10 @@ class TPQueue {
       arr[(a + 1) % size] = arr[a % size];
     }
     arr[(a + 1) % size] = temp;
-    ++l;
+      ++l;
     }
-    T& pop() {
-    return arr[(b++) % size];
+    T pop() {
+      return arr[(b++) % size];
     }
 };
 
